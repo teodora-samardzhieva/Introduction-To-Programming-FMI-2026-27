@@ -10,7 +10,7 @@ int main() {
     if (score > 0 && score < 10)
         if (score < 5) {
             cout << "Fail...."; }
-        else if (score < 7) {
+        else if (score < 7) { // влиза тук само ако score < 5 е лъжа
             cout << "Pass..."; }
         else cout << "Excellent...";
     return 0;

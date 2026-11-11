@@ -9,6 +9,7 @@ int main() {
     for (cout << (i = 0); i < 10; ++i) {
         for (int j = 0; j < 3; ++j)
             i++;
+        // сложи си скоби да не се бъркаш
         cout << i << "\n";
     };
     return 0;

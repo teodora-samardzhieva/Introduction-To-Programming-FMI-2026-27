@@ -5,6 +5,10 @@
 
 using namespace std;
 
+// double my_abs(double val) {
+//     return (val < 0) ? -val : val;
+// }
+
 int main() {
     double num1, num2;
     cin >> num1 >> num2;
@@ -15,7 +19,26 @@ int main() {
     else
         cout << num1 * 4.12 << "; " << num2 * 4.12 << endl;
     return 0;
+
+//     double num1, num2;
+    
+//     if (!(cin >> num1 >> num2)) {
+//         cout << "Greshka pri vavezhdaneto na danni!" << endl;
+//         return 1;
+//     }
+
+//     const double FACTOR = 4.12;
+//     const double EPSILON = 1e-9; // Праг за сигурно сравнение
+
+//     if (my_abs(num1 - num2) < EPSILON) {
+//         cout << "Only " << num1 * FACTOR << endl;
+//     } else {
+//         cout << num1 * FACTOR << "; " << num2 * FACTOR << endl;
+//     }
+
+//     return 0;
 }
+
 
 // 1. Замяна на директното сравнение с == за double (Критично)
 // Какво да се направи: Вместо if (num1 == num2), да се използва проверка с малък праг на точност (epsilon), като се вземе абсолютната стойност на тяхната разлика:
@@ -58,36 +81,3 @@ int main() {
 
 // Рефaкториран вариант на кода (без външни библиотеки):
 // C++
-
-
-// #include <iostream>
-
-// using namespace std;
-
-// // Помощна функция за абсолютна стойност (без нужди от <cmath>)
-// double my_abs(double val) {
-//     return (val < 0) ? -val : val;
-// }
-
-// int main() {
-//     double num1, num2;
-    
-//     // 3. Валидация на входа
-//     if (!(cin >> num1 >> num2)) {
-//         cout << "Greshka pri vavezhdaneto na danni!" << endl;
-//         return 1;
-//     }
-
-//     const double FACTOR = 4.12;
-//     const double EPSILON = 1e-9; // Праг за сигурно сравнение
-
-//     // 1. Безопасно сравнение с epsilon вместо директно ==
-//     if (my_abs(num1 - num2) < EPSILON) {
-//         // 4. Добавен нов ред (endl) за симетрия
-//         cout << "Only " << num1 * FACTOR << endl;
-//     } else {
-//         cout << num1 * FACTOR << "; " << num2 * FACTOR << endl;
-//     }
-
-//     return 0;
-// }

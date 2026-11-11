@@ -6,12 +6,15 @@ using namespace std;
 
 int a = 12;
 int c = -5;
+
 int foo1() {
     return -a * ++c;
 }
+
 int main() {
     int b = 2;
     std::cout << foo1() + b * b << std::endl;
+    // cout << c; // -4 
 }
 
 
@@ -25,11 +28,13 @@ int main() {
 // }
 
 // int main() {
-//     int a = 12;
-//     int c = -5;
-//     int b = 2;
-    
-//     std::cout << calculateScore(a, c) + b * b << std::endl;
+//     const int a = 12; // a or num1
+//     const int b = 2; // b or num2
+//     const int c = -5; // c or num3
+
+//     int result = calculateScore(a, c) + b * b;
+
+//     std::cout << result << std::endl;
 //     return 0;
 // }
 

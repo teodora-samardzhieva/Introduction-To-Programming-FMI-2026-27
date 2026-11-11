@@ -11,7 +11,7 @@ int main() {
     int x, y;
     cin >> x >> y;
 
-    if (x == 5 && y == 4) {
+    if (x == 5 && y == 4) { //! &&
         cout << "OK";
     } else if (x == 4) {
         cout << x;
@@ -21,13 +21,13 @@ int main() {
 
     // switch (x) {
     //     case 5:
-    //         switch (y) {
-    //             case 4:
-    //                 cout << "OK";
-    //                 break;
-    //             default:
-    //                 cout << "not ok";
-    //                 break;
+    //!         switch (y) {
+    //!             case 4:
+    //!                 cout << "OK";
+    //!                 break;
+    //!             default:
+    //!                 cout << "not ok";
+    //!                break;
     //         }
     //         break;
             
@@ -43,4 +43,21 @@ int main() {
     return 0;
 }
 
+
+// ако беше x == 5 && y == 4
+// switch (x == 5 || y == 4) {
+//         case true:
+//             cout << "OK";
+//             break;
+//         case false:
+//             switch (x) {
+//                 case 4:
+//                     cout << x;
+//                     break;
+//                 default:
+//                     cout << "not ok";
+//                     break;
+//             }
+//             break;
+//     }
 
