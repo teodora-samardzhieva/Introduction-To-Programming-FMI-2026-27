@@ -21,7 +21,7 @@ void reverseArray(int arr[], int size) {
     // swap(arr[i], arr[size - i - 1]);
 
     for (int i = 0; i < size / 2; i++) {
-        swap(arr[i], arr[size - i - 1]);
+        swap(arr[i], arr[size - i - 1]); // взимаме първия и последния елемент и им разменяме местата
     }
 }
 

@@ -21,7 +21,8 @@ bool hasDuplicates(int arr[], int size) {
 
 int main() {
     int arr[] = {5, 4, 30, 2, 3, 10, 11};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    // 7 x 8byte = 56     56 / 8byte = 7 
+    int size = sizeof(arr) / sizeof(arr[0]); // 7
 
     printArray(arr, size);
 
